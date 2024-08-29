@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Darker text color for better readability */
+    margin: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea, button {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #007BFF; /* Blue background for buttons */
+    color: #fff; /* White text for buttons */
+    border: none; /* Remove default border */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
