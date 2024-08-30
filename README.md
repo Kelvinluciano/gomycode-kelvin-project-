@@ -56,3 +56,35 @@ Best Practices:
 - AES: Use a strong key length (256-bit) for sensitive data. Ensure key management is secure.
 - RSA: Use a key length of at least 2048 bits for adequate security. Regularly update keys and manage them securely.
 Both AES and RSA play crucial roles in modern cryptographic systems, with AES being preferred for high-performance data encryption and RSA for secure key exchange and digital signatures. gomycode-kelvin-project-public url:file:///Users/kelvin/Desktop/gomycode-kelvin-project-/Index.html
+Install pycryptodome
+You can install pycryptodome via pip, which is the package installer for Python. Open your terminal or command prompt and run:
+
+pip install pycryptodome
+
+Using pycryptodome in Python
+Once installed, you can use pycryptodome to perform AES and RSA encryption and decryption. Here’s a step-by-step guide to help you get started:
+
+To use AES and RSA encryption and decryption, you’ll need to install libraries that provide implementations for these algorithms. The process varies depending on the programming language and library you choose. I'll cover installation for Python using the pycryptodome library, which is a popular and comprehensive cryptographic library for Python.
+
+Installation for Python
+Install pycryptodome
+
+You can install pycryptodome via pip, which is the package installer for Python. Open your terminal or command prompt and run:
+
+bash
+pip install pycryptodome
+Using pycryptodome in Python
+Once installed, you can use pycryptodome to perform AES and RSA encryption and decryption. Here’s a step-by-step guide to help you get started:
+
+Installation for Other Languages
+If you are using a different programming language, here are some general guidelines for installation:
+
+Java
+For Java, you can use libraries like Bouncy Castle. You can add it to your project using Maven or Gradle.
+
+<dependency>
+    <groupId>org.bouncycastle</groupId>
+    <artifactId>bcprov-jdk18on</artifactId>
+    <version>1.76</version> <!-- Check for the latest version -->
+</dependency>
+
