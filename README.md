@@ -1,90 +1,55 @@
- AES (Advanced Encryption Standard) and RSA (Rivest-Shamir-Adleman) are two fundamental encryption algorithms used for securing data. Each serves different purposes and operates based on different principles.
- AES (Advanced Encryption Standard)
-How It Works:
-1. Key Expansion: The original encryption key is expanded into several round keys.
-2. Initial Round:
-   - AddRoundKey: Each byte of the block is XORed with a block of the round key.
-3. Main Rounds:
-   - SubBytes: Each byte of the block is replaced with another byte using a substitution table (S-box).
-   - ShiftRows: Rows of the block are shifted cyclically.
-   - MixColumns: Columns of the block are mixed to provide diffusion.
-   - AddRoundKey: Another round key is XORed with the block.
-4. Final Round:
-   - SubBytes
-   - ShiftRows
-   - AddRoundKey
-Usage:
-- Commonly used for encrypting data in applications such as securing communications, file encryption, and data storage.
-Strengths:
-- High efficiency and speed.
-- Strong security when using sufficiently long keys (e.g., 256 bits).
-weaknesses:
-- If the key is compromised, all data encrypted with that key is at risk.
- RSA (Rivest-Shamir-Adleman)
-Overview:
-- Type: Asymmetric key encryption.
-- Key Size: Typically 1024-bit, 2048-bit, or 4096-bit keys.
-- Operation: Uses a pair of keys (public and private) for encryption and decryption.
-How It Works:
-1. Key Generation:
-   - Select two large prime numbers and compute their product (n).
-   - Compute the totient function of n.
-   - Choose an encryption exponent (e) that is coprime with the totient function.
-   - Compute the decryption exponent (d), the modular multiplicative inverse of e.
-   - Public key: (e, n), Private key: (d, n).
-2. Encryption:
-   - Convert plaintext into an integer (M).
-   - Compute ciphertext (C) using \( C = M^e \mod n \).
-3. Decryption:
-   - Compute plaintext (M) using \( M = C^d \mod n \).
-Usage:
-- Commonly used for secure key exchange, digital signatures, and data encryption.
-Strengths:
-- Provides secure key distribution and digital signatures.
-- Public key can be shared openly, while the private key remains confidential.
-Weaknesses:
-- Slower compared to symmetric encryption algorithms like AES.
-- Requires large key sizes for strong security, which can impact performance.
-Key Encryption/Decryption Tools
-For AES:
-- Tools: OpenSSL, PyCryptoDome (Python), Java Cryptography Extension (JCE).
-- Use: Encrypt/decrypt files, messages, and data streams.
-For RSA:
-- Tools: OpenSSL, Java Keytool, Crypto++ (C++), PyCryptoDome (Python).
-- Use: Generate key pairs, encrypt/decrypt data, and create digital signatures.
-Best Practices:
-- AES: Use a strong key length (256-bit) for sensitive data. Ensure key management is secure.
-- RSA: Use a key length of at least 2048 bits for adequate security. Regularly update keys and manage them securely.
-Both AES and RSA play crucial roles in modern cryptographic systems, with AES being preferred for high-performance data encryption and RSA for secure key exchange and digital signatures. gomycode-kelvin-project-public url:file:///Users/kelvin/Desktop/gomycode-kelvin-project-/Index.html
-Install pycryptodome
-You can install pycryptodome via pip, which is the package installer for Python. Open your terminal or command prompt and run:
+ENCRYPTION & DECRYPTION APP
+A simple web application for encrypting and decrypting messages using RSA and AES encryption algorithms.
+ Overview 
+- Features
+- Live Demo
+- Installation Guide
+- How to Use
+- Technology Stack
+- Contribution
+  features
+- Frontend: User-friendly interface for encryption and decryption.
+- Backend: API endpoints for processing encryption and decryption requests.
+- RSA Encryption: Asymmetric encryption for secure key exchange.
+- AES Encryption: Symmetric encryption for data security.
+  Installation
+Step 1. Clone the repository:
 
-pip install pycryptodome
+https://github.com/Kelvinluciano/gomycode-kelvin-project-.git
 
-Using pycryptodome in Python
-Once installed, you can use pycryptodome to perform AES and RSA encryption and decryption. Here’s a step-by-step guide to help you get started:
+Step 2. open the encryption directory on the code editor terminal using
+ cd encryption-app
+Step 3. Install dependencies:
+ npm install
 
-To use AES and RSA encryption and decryption, you’ll need to install libraries that provide implementations for these algorithms. The process varies depending on the programming language and library you choose. I'll cover installation for Python using the pycryptodome library, which is a popular and comprehensive cryptographic library for Python.
+step 4. Run the application:
+ npm start
+ Step 5. Open in browser:http://127.0.0.1:5500/index.html 
+ Usage
+Encrypting a Message:
+. Enter your message in the text area.
 
-Installation for Python
-Install pycryptodome
+. Click the "Encrypt" button.
 
-You can install pycryptodome via pip, which is the package installer for Python. Open your terminal or command prompt and run:
+The encrypted message will be displayed in the output field.
 
-bash
-pip install pycryptodome
-Using pycryptodome in Python
-Once installed, you can use pycryptodome to perform AES and RSA encryption and decryption. Here’s a step-by-step guide to help you get started:
+Decrypting a Message:
+. Enter the encrypted message and AES key.
 
-Installation for Other Languages
-If you are using a different programming language, here are some general guidelines for installation:
+. Click the "Decrypt" button.
 
-Java
-For Java, you can use libraries like Bouncy Castle. You can add it to your project using Maven or Gradle.
+The decrypted message will be displayed in the output field.
 
-<dependency>
-    <groupId>org.bouncycastle</groupId>
-    <artifactId>bcprov-jdk18on</artifactId>
-    <version>1.76</version> <!-- Check for the latest version -->
-</dependency>
+Contributing
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or suggestions.
 
+Steps to Contribute
+Step 1. Fork the repository.
+
+Step 2. Create a new branch (git checkout -b feature-branch).
+
+step 3. Make your changes and commit them (git commit -m 'Add new feature').
+
+step 4. Push to the branch (git push origin feature-branch).
+
+Step 5. Open a pull request.
