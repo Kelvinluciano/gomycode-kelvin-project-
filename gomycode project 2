@@ -11,4 +11,7 @@ Visit Render and sign up for an account if you haven't already. Log in to your a
 2. Create a New Web Service on Render
 Once logged in, go to the Render dashboard.
 Click on the "+ New" button and select "Web Service" from the dropdown menu.
-
+![render image 1](https://github.com/user-attachments/assets/a76edc6c-68e7-4dd8-bb2e-b9ca4344547e)
+3. Connect Your GitHub Repository
+Render will prompt you to connect your GitHub account if you haven't already done so. Authorize Render to access your GitHub repositories.
+Select the repository that contains your web service project.
