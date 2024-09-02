@@ -46,4 +46,6 @@ Start OWASP ZAP: Launch the application and familiarize yourself with its interf
 Running a Security Scan
 Target Application:
 Set the target URL to your deployed web service's URL on Render. Enter the url to attack then click 
-the attack button 
+the attack button
+![Uploading Screenshot 2024-09-02 at 2.41.33 PM.png…]()
+Spidering: Use the Spider tool to discover all the pages and endpoints of your application.
