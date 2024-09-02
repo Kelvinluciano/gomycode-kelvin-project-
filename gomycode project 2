@@ -39,4 +39,8 @@ Conclusion
 You have successfully deployed your web service to Render using GitHub. For more detailed instructions and advanced configurations, refer to the Render documentation.
 Carrying out a web app security test with ZAP
 After deploying the web service, it's crucial to ensure it is secure and free from vulnerabilities
- The following steps outline how to use OWASP ZAP (Zed Attack Proxy) for security testing. We would be using ZAP Zap website
+ The following steps outline how to use OWASP ZAP (Zed Attack Proxy) for security testing. We would be using ZAP website
+Setting Up OWASP ZAP
+Download and Install: Download OWASP ZAP and follow the installation instructions for your operating system.
+Start OWASP ZAP: Launch the application and familiarize yourself with its interface.
+Running a Security Scan
