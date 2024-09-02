@@ -49,3 +49,7 @@ Set the target URL to your deployed web service's URL on Render. Enter the url t
 the attack button
 ![Uploading Screenshot 2024-09-02 at 2.41.33 PM.png…]()
 Spidering: Use the Spider tool to discover all the pages and endpoints of your application.
+<img width="966" alt="Screenshot 2024-09-02 at 2 59 16 PM" src="https://github.com/user-attachments/assets/06cc791e-7d69-4bfb-b1fa-7426bd69212e">
+Active Scan: Perform an active scan to detect potential vulnerabilities.
+
+On click the attack starts , you can view details about the attack below
