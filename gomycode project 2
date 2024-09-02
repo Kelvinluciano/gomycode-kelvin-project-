@@ -44,3 +44,6 @@ Setting Up OWASP ZAP
 Download and Install: Download OWASP ZAP and follow the installation instructions for your operating system.
 Start OWASP ZAP: Launch the application and familiarize yourself with its interface.
 Running a Security Scan
+Target Application:
+Set the target URL to your deployed web service's URL on Render. Enter the url to attack then click 
+the attack button 
