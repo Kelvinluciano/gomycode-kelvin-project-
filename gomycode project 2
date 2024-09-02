@@ -15,3 +15,28 @@ Click on the "+ New" button and select "Web Service" from the dropdown menu.
 3. Connect Your GitHub Repository
 Render will prompt you to connect your GitHub account if you haven't already done so. Authorize Render to access your GitHub repositories.
 Select the repository that contains your web service project.
+<img width="1210" alt="Screenshot 2024-09-02 at 12 38 01 PM" src="https://github.com/user-attachments/assets/f3f70774-89f1-413b-9f95-35f93dccdb6f">
+4. Configure the Service
+Name: Enter a name for your service.
+Region: Choose the region closest to your target audience.
+Branch: Select the branch you want to deploy (e.g., main).
+Build Command: Specify the command to build your application (e.g., npm install for Node.js projects).
+Start Command: Specify the command to start your web service (e.g., npm start for Node.js projects).
+Instance Type: Choose an instance type based on your application's needs.
+5. Environment Variables
+If your application requires environment variables, you can add them in the "Environment" section. For example:
+
+PORT: The port on which your web service will run (Render sets this automatically, but you can override it if necessary).
+6. Deploy
+After configuring the above settings, click "Create Web Service" to deploy your application.
+
+Render will start building and deploying your application. You can monitor the deployment process in the Render dashboard. Once the deployment is complete, your web service will be accessible via the URL provided by Render.
+
+7. Monitoring and Updates
+Logs: You can view logs for your service in the Render dashboard to monitor the application's status and debug issues.
+Automatic Deploys: Render can automatically deploy updates when you push new changes to the connected GitHub branch.
+Conclusion
+You have successfully deployed your web service to Render using GitHub. For more detailed instructions and advanced configurations, refer to the Render documentation.
+Carrying out a web app security test with ZAP
+After deploying the web service, it's crucial to ensure it is secure and free from vulnerabilities
+ The following steps outline how to use OWASP ZAP (Zed Attack Proxy) for security testing. We would be using ZAP Zap website
